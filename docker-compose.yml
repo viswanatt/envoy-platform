@@ -1,0 +1,32 @@
+services:
+  envoy-api:
+    build: ./envoy-api
+    image: envoy-api:1.0.0
+    container_name: envoy-api
+    ports:
+      - "3000:3000"
+    networks:
+      - envoy-net
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+
+  envoy-ui:
+    build: ./envoy-ui
+    image: envoy-ui:1.0.0
+    container_name: envoy-ui
+    ports:
+      - "8080:80"
+    networks:
+      - envoy-net
+    depends_on:
+      envoy-api:
+        condition: service_healthy
+    restart: unless-stopped
+
+networks:
+  envoy-net:
+    driver: bridge
