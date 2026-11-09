@@ -50,9 +50,9 @@ pipeline {
         stage('Smoke Test API') {
             steps {
                 sh """
-                    docker run -d --name smoke-api -p 3001:3000 envoy-api:${IMAGE_TAG}
+                    docker run -d --name smoke-api envoy-api:${IMAGE_TAG}
                     sleep 5
-                    curl -f http://localhost:3001/health || (docker logs smoke-api && exit 1)
+                    docker exec smoke-api node -e "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
                     docker rm -f smoke-api
                 """
             }
