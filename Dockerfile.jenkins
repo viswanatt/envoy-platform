@@ -1,0 +1,10 @@
+FROM jenkins/jenkins:lts
+
+USER root
+
+# Install Docker CLI (not the daemon—we use the host's)
+RUN apt-get update && \
+    apt-get install -y docker.io && \
+    usermod -aG docker jenkins
+
+USER jenkins
