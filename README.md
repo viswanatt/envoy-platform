@@ -30,6 +30,11 @@ environment provisioning, configuration drift, and cloud cost waste.
 ## 📸 Screenshots
 
 <img width="1919" height="1079" alt="Screenshot 2026-11-06 171928" src="https://github.com/user-attachments/assets/33ff475f-2667-4797-8aaa-fa63807d8923" />
+<img width="1905" height="821" alt="Screenshot 2026-11-06 172455" src="https://github.com/user-attachments/assets/8dd247de-597a-49d9-8d8d-a6073d419770" />
+<img width="1919" height="1072" alt="Screenshot 2026-11-06 172614" src="https://github.com/user-attachments/assets/30d0229d-7814-40d0-bf3f-e6d2ca2f4c29" />
+<img width="1919" height="1079" alt="Screenshot 2026-11-06 172208" src="https://github.com/user-attachments/assets/d5fb29bd-fe17-401c-98b8-b4c9f7993248" />
+<img width="1915" height="688" alt="Screenshot 2026-11-09 235757" src="https://github.com/user-attachments/assets/4ae1efc8-29ee-45f8-ab3a-89a092638076" />
+<img width="1919" height="778" alt="Screenshot 2026-11-09 235916" src="https://github.com/user-attachments/assets/72b080ec-326f-4dcc-a9ce-d2f2548ec2e7" />
 
 
 ## 🏃 How to Run Locally
