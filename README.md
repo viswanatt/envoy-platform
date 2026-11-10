@@ -29,7 +29,8 @@ environment provisioning, configuration drift, and cloud cost waste.
 
 ## 📸 Screenshots
 
-[INSERT SCREENSHOTS — see instructions below]
+<img width="1919" height="1079" alt="Screenshot 2026-11-06 171928" src="https://github.com/user-attachments/assets/33ff475f-2667-4797-8aaa-fa63807d8923" />
+
 
 ## 🏃 How to Run Locally
 
