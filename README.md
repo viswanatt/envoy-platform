@@ -7,7 +7,8 @@ environment provisioning, configuration drift, and cloud cost waste.
 
 ## 🏗️ Architecture
 
-[INSERT ARCHITECTURE DIAGRAM — see instructions below]
+<img width="644" height="542" alt="Screenshot 2026-11-10 220809" src="https://github.com/user-attachments/assets/3b802daa-6424-49ad-aef0-0ae1c66a8f6b" />
+
 
 ## 🛠️ Tech Stack
 
